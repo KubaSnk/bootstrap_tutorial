@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap - Projekt startowy</title>
+
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="r03.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <ol class="breadcrumb">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Kalendarz</a></li>
+                <li class="active">Dodaj zadanie</li>
+            </ol>
+            <div class="row">
+                <label for="nav-switch" class="visible-xs-block">Menu</label>
+                <input type="checkbox" id="nav-switch" class="nav-switch visible-xs-block visuallyhidden">
+                <div class="col-sm-3 col-xs-12 col-left">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="index.html">Dodaj nowe zadanie</a></li>
+                        <li class="list-group-item list-group-item-danger">
+                            <a href="index.html">Pokaż wszystkie zadania</a>
+                            <span class="badge">23</span>
+                        </li>
+                        <li class="list-group-item list-group-item-success">
+                            <a href="index.html">Pokaż niewykonane zadania</a>
+                            <span class="badge">12</span>
+                        </li>
+                        <li class="list-group-item list-group-item-info"><a href="index.html">Zadania w tym miesiącu</a>
+                        </li>
+                        <li class="list-group-item list-group-item-warning disabled"><a href="index.html">Zadania w tym
+                            kwartale</a></li>
+                        <li class="list-group-item">
+                            <a href="index.html">
+                                <h4 class="list-group-item-heading">Zadania w tym kwartale</h4>
+                                <p class="list-group-item-text">Wyświetl zadania zaplanowane do wykonania w tym
+                                    kwartale</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 col-center">
+                    <div class="row">
+                        <div class="col-sm-12"></div>
+                        <div class="col-sm-12"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12 col-right">
+                    <div class="col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="infoBox1">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        Wersja 3.1.2
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="infoBox1">
+                                <div class="panel-body">
+                                    Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="infoBox2">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        Wersja 3.1.5
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="infoBox2">
+                                <div class="panel-body">
+                                    Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="infoBox3">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"
+                                       aria-expanded="true" aria-controls="collapse3">
+                                        Wersja 3.1.6
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-labelledby="infoBox3">
+                                <div class="panel-body">
+                                    Dodano obsługę udostępniania zadań w kalendarzu innym zarejestrowanym użytkownikom
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#toggleAccordion" id="toggleAccordion">Ukryj lub pokaż okno</a>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12"></div>
+                            <div class="col-md-6 col-xs-12"></div>
+                            <div class="col-md-6 col-xs-12"></div>
+                            <div class="col-md-6 col-xs-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="r03.js"></script>
+    </body>
+</html>

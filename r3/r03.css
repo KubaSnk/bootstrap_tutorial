@@ -1,0 +1,54 @@
+/*.row > div {*/
+/*background: #999;*/
+/*padding-top: 30px;*/
+/*padding-bottom: 30px;*/
+/*}*/
+
+/*.row > div:nth-child(2n+2){*/
+/*background: #000;*/
+/*color: #ffffff;*/
+/*}*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media (max-width: 767px) {
+    .col-left{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        bottom: 0;
+        left: -100%;
+        z-index: 1;
+        transition: 0.2s;
+    }
+}
+
+label[for="nav-switch"]{
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 5px;
+    background: #eee;
+    color: #aaa;
+    border-radius: 2px;
+    line-height: 1.1em;
+    height: 30px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.nav-switch:checked + .col-left {
+    left: 0;
+    transition: 0.2s;
+}
