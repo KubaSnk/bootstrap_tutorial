@@ -1,0 +1,10 @@
+.row > div {
+    background: #999;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.row > div:nth-child(2n+2){
+    background: #000;
+    color: #ffffff;
+}
